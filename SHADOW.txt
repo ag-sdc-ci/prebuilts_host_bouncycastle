@@ -1,0 +1,6 @@
+shadow prebuilt repo: bouncycastle (host)
+  package: bouncycastle-unbundled 17.0.0-1 (PKGBUILD build, any)
+  upstream: platform/external/bouncycastle (branch: main)
+  api-level: universal (JVM bytecode host library, Android 17 / API 37 baseline)
+  layout: .pkg.tar.zst blob at root, lib64/*.jar; Android.bp providing bouncycastle-unbundled, bouncycastle-bcpkix-unbundled, bouncycastle-ocsp-unbundled, bouncycastle-host
+  date: 2026-10-19

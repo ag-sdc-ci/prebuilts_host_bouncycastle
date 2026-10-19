@@ -1,0 +1,39 @@
+package {
+    default_applicable_licenses: ["external_bouncycastle_license"],
+}
+
+license {
+    name: "external_bouncycastle_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+        "SPDX-license-identifier-BSD",
+        "SPDX-license-identifier-MIT",
+    ],
+    license_text: [
+        "NOTICE",
+    ],
+}
+
+java_import {
+    name: "bouncycastle-unbundled",
+    jars: ["lib64/bouncycastle-unbundled.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "bouncycastle-bcpkix-unbundled",
+    jars: ["lib64/bouncycastle-bcpkix-unbundled.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "bouncycastle-ocsp-unbundled",
+    jars: ["lib64/bouncycastle-ocsp-unbundled.jar"],
+    host_supported: true,
+}
+
+java_import_host {
+    name: "bouncycastle-host",
+    jars: ["lib64/bouncycastle-host.jar"],
+}
